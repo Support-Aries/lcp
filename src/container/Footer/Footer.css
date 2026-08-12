@@ -1,0 +1,136 @@
+/* ─── Footer ──────────────────────────────────────────────── */
+.ft-footer {
+  background-color: #020617;
+  /* slate-950 */
+  color: #cbd5e1;
+  /* slate-300 */
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* ─── Top grid ────────────────────────────────────────────── */
+.ft-grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ─── Brand column ────────────────────────────────────────── */
+.ft-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 1rem;
+}
+
+.ft-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.ft-logo {
+  height: 3rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.ft-tagline {
+  color: #94a3b8;
+  /* slate-400 */
+  font-size: 0.875rem;
+  line-height: 1.625;
+  margin-bottom: 0.5rem;
+}
+
+/* ─── Column heading ──────────────────────────────────────── */
+.ft-col-heading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+/* ─── Contact list ────────────────────────────────────────── */
+.ft-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.ft-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.ft-contact-item--top {
+  align-items: flex-start;
+}
+
+.ft-contact-icon {
+  color: #f97316;
+  /* orange-500 */
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+/* ─── Social buttons ──────────────────────────────────────── */
+.ft-socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ft-social-btn {
+  background-color: #1e293b;
+  /* slate-800 */
+  padding: 0.75rem;
+  border-radius: 9999px;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 200ms ease;
+}
+
+.ft-social-btn:hover {
+  background-color: #f97316;
+  /* orange-500 */
+}
+
+/* ─── Bottom bar ──────────────────────────────────────────── */
+.ft-bottom {
+  border-top: 1px solid rgba(30, 41, 59, 0.6);
+  /* slate-800/60 */
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: #64748b;
+  /* slate-500 */
+}
+
+.ft-legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.ft-legal-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.ft-legal-link:hover {
+  color: #ffffff;
+}

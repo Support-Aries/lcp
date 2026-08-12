@@ -1,0 +1,115 @@
+/* ─── Section ─────────────────────────────────────────────── */
+.ch-section {
+  position: relative;
+  background-color: #0f172a;
+  /* slate-900 */
+  color: #ffffff;
+  padding-top: var(--section-padding-y, 5rem);
+  padding-bottom: var(--section-padding-y, 5rem);
+}
+
+/* ─── Intro block ─────────────────────────────────────────── */
+.ch-intro {
+  text-align: center;
+  max-width: 48rem;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+
+.ch-badge {
+  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: #1e293b;
+  /* slate-800 */
+  color: #fb923c;
+  /* orange-400 */
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.ch-heading {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.5rem;
+}
+
+.ch-subtext {
+  color: #94a3b8;
+  /* slate-400 */
+  font-size: 1.125rem;
+}
+
+/* ─── Grid ────────────────────────────────────────────────── */
+.ch-grid {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  gap: 2rem;
+}
+
+/* ─── Card ────────────────────────────────────────────────── */
+.ch-card {
+  background-color: #1e293b;
+  /* slate-800 */
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1px solid #334155;
+  /* slate-700 */
+  transition: border-color 200ms ease;
+}
+
+.ch-card:hover {
+  border-color: rgba(249, 115, 22, 0.5);
+  /* orange-500/50 */
+}
+
+/* ─── Icon wrapper ────────────────────────────────────────── */
+.ch-icon-wrap {
+  width: 4rem;
+  height: 4rem;
+  background-color: #0f172a;
+  /* slate-900 */
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: transform 200ms ease;
+}
+
+.ch-card:hover .ch-icon-wrap {
+  transform: scale(1.1);
+}
+
+/* ─── Icon colors ─────────────────────────────────────────── */
+.ch-icon--red {
+  color: #ef4444;
+}
+
+/* red-500   */
+.ch-icon--amber {
+  color: #f59e0b;
+}
+
+/* amber-500 */
+.ch-icon--blue {
+  color: #3b82f6;
+}
+
+/* blue-500  */
+
+/* ─── Card text ───────────────────────────────────────────── */
+.ch-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ch-card-desc {
+  color: #94a3b8;
+  /* slate-400 */
+  line-height: 1.625;
+}

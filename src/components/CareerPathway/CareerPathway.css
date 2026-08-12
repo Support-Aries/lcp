@@ -1,0 +1,281 @@
+/* ─── Section ─────────────────────────────────────────────── */
+.cp-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #0a0f1c;
+  position: relative;
+  overflow: hidden;
+  font-family: sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ─── Background blurs ────────────────────────────────────── */
+.cp-blur {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(120px);
+}
+
+.cp-blur--pink {
+  top: 25%;
+  left: 25%;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(236, 72, 153, 0.1);
+}
+
+.cp-blur--blue {
+  bottom: 25%;
+  right: 25%;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* ─── Container ───────────────────────────────────────────── */
+.cp-container {
+  position: relative;
+  z-index: 10;
+  max-width: 72rem;
+}
+
+/* ─── Heading block ───────────────────────────────────────── */
+.cp-heading-block {
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 20;
+}
+
+.cp-heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.cp-subheading {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/* ─── Desktop timeline wrapper ────────────────────────────── */
+.cp-desktop {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+/* SVG curve */
+.cp-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.cp-path {
+  opacity: 0.9;
+}
+
+/* ─── Start / End pills ───────────────────────────────────── */
+.cp-pill {
+  position: absolute;
+  font-weight: 800;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+}
+
+.cp-pill--entry {
+  left: -2%;
+  top: 415px;
+  background-color: #f9a8d4;
+  /* pink-300 */
+  color: #4a044e;
+  /* pink-950 */
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+}
+
+.cp-pill--elite {
+  /* right: 0%; */
+  /* top: 115px; */
+  top: 125px;
+  left: 100%;
+  background-color: #60a5fa;
+  /* blue-400 */
+  color: #172554;
+  /* blue-950 */
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+/* ─── Nodes ───────────────────────────────────────────────── */
+.cp-node {
+  position: absolute;
+  width: 100%;
+  max-width: 280px;
+}
+
+.cp-node--1 {
+  left: 20%;
+  top: 416px;
+}
+
+.cp-node--2 {
+  left: 42%;
+  /* top: 355px; */
+  top: 345px;
+}
+
+.cp-node--3 {
+  left: 62%;
+  top: 220px;
+}
+
+.cp-node--4 {
+  left: 82%;
+  /* top: 163px; */
+  top: 155px;
+}
+
+/* Node dot */
+.cp-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+/* Connector lines */
+.cp-connector {
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.cp-connector--up {
+  bottom: -12px;
+  height: 180px;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.cp-connector--down {
+  top: 0;
+  height: 160px;
+  transform: translateX(-50%) translateY(10px);
+}
+
+/* ─── Cards ───────────────────────────────────────────────── */
+.cp-card {
+  position: absolute;
+  left: -20px;
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  color: #ffffff;
+  transition: background-color 200ms ease;
+}
+
+.cp-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cp-card--above {
+  bottom: 190px;
+}
+
+.cp-card--below {
+  top: 170px;
+}
+
+/* Node 4 card is 180px below its connector */
+.cp-node--4 .cp-card--below {
+  top: 170px;
+}
+
+.cp-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cp-card-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.cp-bullet {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.cp-card-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  line-height: 1.625;
+}
+
+/* ─── Mobile timeline ─────────────────────────────────────── */
+.cp-mobile {
+  /* display: flex; */
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  margin-top: 3rem;
+  z-index: 10;
+  padding-left: 1.5rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  margin-left: 1rem;
+}
+
+.cp-mobile-item {
+  position: relative;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.cp-mobile-dot {
+  position: absolute;
+  left: -35px;
+  top: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffffff;
+  border-radius: 9999px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
+}
+
+.cp-mobile-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}

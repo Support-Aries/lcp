@@ -1,0 +1,110 @@
+/* ─── Section ─────────────────────────────────────────────── */
+.ind-section {
+  position: relative;
+  background-color: #fafafa;
+  padding-top: var(--section-padding-y, 5rem);
+  padding-bottom: var(--section-padding-y, 5rem);
+}
+
+/* ─── Intro block ─────────────────────────────────────────── */
+.ind-intro {
+  text-align: center;
+  max-width: 48rem;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+
+.ind-heading {
+  font-weight: 800;
+  color: #0f172b;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+.ind-subtext {
+  color: rgba(15, 23, 43, 0.6);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+/* ─── Grid ────────────────────────────────────────────────── */
+.ind-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ─── Card base ───────────────────────────────────────────── */
+.ind-card {
+  padding: 2.5rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.ind-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Light variant */
+.ind-card--light {
+  background-color: #ffffff;
+  color: #0f172b;
+  border: 1px solid #f1f5f9;
+  /* slate-100 */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ind-card--light:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark / highlighted variant */
+.ind-card--dark {
+  background-color: #0f172b;
+  color: #ffffff;
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 43, 0.1), 0 8px 10px -6px rgba(15, 23, 43, 0.1);
+}
+
+/* ─── Icon wrap ───────────────────────────────────────────── */
+.ind-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 9999px;
+  background-color: #f97316;
+  /* orange-500 */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(249, 115, 22, 0.2);
+  flex-shrink: 0;
+}
+
+/* ─── Card title ──────────────────────────────────────────── */
+.ind-card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.025em;
+}
+
+/* ─── Card description ────────────────────────────────────── */
+.ind-card-desc {
+  font-size: 0.875rem;
+  line-height: 1.625;
+  font-weight: 500;
+}
+
+.ind-card-desc--light {
+  color: #64748b;
+  /* slate-500 */
+}
+
+.ind-card-desc--dark {
+  color: rgba(255, 255, 255, 0.7);
+}
